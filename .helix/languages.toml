@@ -1,0 +1,41 @@
+[[language]]
+name = "python"
+language-servers = ["basedpyright", "ruff"]
+formatter = { command = "dprint", args = ["fmt", "--stdin", "py"] }
+auto-format = true
+
+[[language]]
+name = "toml"
+roots = ["."]
+language-servers = ["taplo"]
+formatter = { command = "dprint", args = ["fmt", "--stdin", "toml"] }
+auto-format = true
+
+[[language]]
+name = "json"
+formatter = { command = "dprint", args = ["fmt", "--stdin", "json"] }
+auto-format = true
+
+[[language]]
+name = "jsonc"
+formatter = { command = "dprint", args = ["fmt", "--stdin", "json"] }
+auto-format = true
+
+[[language]]
+name = "markdown"
+formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
+auto-format = true
+
+# LSP config stuff
+# Python
+[language-server.basedpyright.config]
+basedpyright.analysis.typeCheckingMode = "standard"
+basedpyright.disableOrganizeImports = true
+
+[language-server.ruff]
+command = "ruff"
+args = ["server"]
+
+# TOML
+[language-server.taplo.config]
+root_dir = [".git", "*.toml"]

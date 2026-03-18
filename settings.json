@@ -1,0 +1,18 @@
+{
+  "worker": { "max_num": 8 },
+  "logging": { "level": "info", "time_format": "%Y-%m-%d %H:%M:%S", "utc": "false" },
+  "orgs": [
+    {
+      "name": "Name of the bank",
+      "base_url": "https://bank-website",
+      "product_list_url_path": "/path/to/product/list",
+      "product_info_prune_xpaths": [],
+      "tin_url": "Tin url",
+      "with_captcha": false,
+      "with_sleep": false,
+      "product_list_action": "click or null",
+      "product_list_query": "query of product element",
+      "product_list_tab_query": "query of page for non-url tabs" 
+    }
+  ]
+}

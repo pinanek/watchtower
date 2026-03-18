@@ -1,0 +1,12 @@
+# Python cache file
+__pycache__
+
+# MacOS
+**/.DS_Store
+
+# IDE
+.idea
+.vscode
+
+# Output
+data
