@@ -1,7 +1,7 @@
 [project]
-name = "vncrediturst-watchtower"
+name = "watchtower"
 version = "0.1.0"
-description = "The watchtower component for VnCrediTrust"
+description = "Simple bank information scraper"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
